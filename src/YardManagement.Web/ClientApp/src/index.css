@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.submenu-enter {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  
+  .submenu-enter-active {
+    max-height: 200px;
+    opacity: 1;
+    transition: max-height 200ms ease-in, opacity 200ms ease-in;
+  }
+  
+  .submenu-exit {
+    max-height: 200px;
+    opacity: 1;
+  }
+  
+  .submenu-exit-active {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 200ms ease-out, opacity 200ms ease-out;
+  }
+
+  .dropdown-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .dropdown-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 200ms, transform 200ms;
+  }
+  
+  .dropdown-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .dropdown-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 200ms, transform 200ms;
+  }
+
+  .submenu-enter {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  
+  .submenu-enter-active {
+    max-height: 200px;
+    opacity: 1;
+    transition: max-height 200ms ease-in, opacity 200ms ease-in;
+  }
+  
+  .submenu-exit {
+    max-height: 200px;
+    opacity: 1;
+  }
+  
+  .submenu-exit-active {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 200ms ease-out, opacity 200ms ease-out;
+  }
+  
