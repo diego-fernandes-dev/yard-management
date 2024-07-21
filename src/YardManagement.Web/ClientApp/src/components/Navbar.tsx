@@ -9,7 +9,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ toggleSidebar, isSidebarCollapsed }) => {
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-md p-4 flex justify-between items-center">
+    <nav className="bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 p-4 flex justify-between items-center">
       <button onClick={toggleSidebar} className="text-gray-900 dark:text-gray-100 focus:outline-none">
         {isSidebarCollapsed ? <ChevronDoubleRightIcon className="h-6 w-6" /> : <ChevronDoubleLeftIcon className="h-6 w-6" />}
       </button>

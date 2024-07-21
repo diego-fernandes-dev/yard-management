@@ -12,8 +12,9 @@ module.exports = {
         secondary: '#64748B', // Gray 500
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
+	  
     },
   },
   plugins: [],
